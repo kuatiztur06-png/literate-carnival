@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Изтурган Гүлжайна - Визитка веб-сайты</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            padding: 35px 25px;
+            max-width: 420px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 90px;
+            height: 90px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto 15px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #777777;
+            margin-bottom: 20px;
+        }
+
+        .info {
+            text-align: left;
+            background-color: #f8f9fa;
+            padding: 18px;
+            border-radius: 12px;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 12px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-item strong {
+            font-size: 12px;
+            color: #667eea;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 3px;
+        }
+
+        .info-item p {
+            font-size: 14px;
+            color: #444444;
+            line-height: 1.4;
+        }
+
+        .hobbies-list {
+            list-style: none;
+            padding: 0;
+            margin-top: 5px;
+        }
+
+        .hobbies-list li {
+            font-size: 14px;
+            color: #444444;
+            padding: 4px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .hobbies-list li::before {
+            content: "✨";
+            margin-right: 8px;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 12px 0;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            box-shadow: 0 4px 12px rgba(118, 75, 162, 0.3);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(118, 75, 162, 0.4);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="avatar">
+            <span>ИГ</span>
+        </div>
+        <h1>Изтурган Гүлжайна</h1>
+        <p class="subtitle">Студент | 3-курс</p>
+        
+        <div class="info">
+            <div class="info-item">
+                <strong>Университет:</strong>
+                <p>Қазақ ұлттық қыздар педагогикалық университеті (ЖенПУ)</p>
+            </div>
+            <div class="info-item">
+                <strong>Мамандығы:</strong>
+                <p>Цифрлық білім беру жүйелерін жобалау</p>
+            </div>
+            <div class="info-item">
+                <strong>Қызығушылықтарым:</strong>
+                <ul class="hobbies-list">
+                    <li>Веб-сайт жасау</li>
+                    <li>Өлең тыңдау</li>
+                    <li>Адамдармен сөйлесу</li>
+                    <li>Маникюр жасау</li>
+                    <li>Кодтарды талдау</li>
+                </ul>
+            </div>
+        </div>
+
+        <a href="mailto:example@gmail.com" class="btn">Байланысу</a>
+    </div>
+</body>
+</html>
